@@ -1,0 +1,600 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    padding-inline: 7vw;
+    background-color: white;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: #817c7c;
+}
+
+nav ul li:hover,
+.footer-a a:hover {
+    font-size: 1.3rem;
+    color: #33ffc5;
+    transition: ease 0.8s;
+}
+
+#hamburger,
+#close-icn,
+.dropdown-menu {
+    display: none;
+}
+
+#invite-btn-nav,
+#invite-btn {
+    background: linear-gradient(to right, #33ffc5, #33a1ff);
+    border: none;
+    width: 150px;
+    height: 37px;
+    border-radius: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+#invite-btn-nav:hover,
+#invite-btn:hover,
+#invite-btn-footer:hover {
+    background: linear-gradient(to left, #33ffc5, #33a1ff);
+    filter: drop-shadow(9px 9px 9px rgba(40, 191, 191, 0.8));
+    font-size: 1rem;
+    width: 160px;
+    height: 38px;
+    transition: ease 0.8s;
+}
+
+main {
+    margin-top: 50px;
+    background-color: #fdf9f9;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 14%;
+}
+
+.main-text {
+    margin-top: 15%;
+    padding-inline: 7vw;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.main-text p {
+    color: #5c5757;
+    line-height: 1.8rem;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.image-1 {
+    width: 60%;
+    position: absolute;
+    top: -5%;
+    right: 0;
+    overflow: hidden;
+}
+
+#bg-intro {
+    width: 100%;
+    transform: translate(18%);
+}
+
+.image-2 {
+    position: absolute;
+    width: 50%;
+    top: -4%;
+    right: 0;
+    overflow: hidden;
+}
+
+#image-mockups {
+    width: 100%;
+    transform: translate(17%);
+}
+
+.main-image-mobile {
+    display: none;
+}
+
+.first-section {
+    background-color: #f8f2f2;
+    padding-inline: 7vw;
+    padding-top: 7%;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.section-txt {
+    font-size: 1rem;
+    line-height: 1.9rem;
+    color: #5c5757;
+    width: 600px;
+}
+
+.Easybank {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.online img,
+.budgeting img,
+.Onboarding img,
+.api img {
+    margin-block: 20px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+.online p,
+.budgeting p,
+.Onboarding p,
+.api p {
+    color: #5c5757;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    margin-bottom: 30%;
+}
+
+.second-section {
+    padding-inline: 7vw;
+    padding-block: 15vh;
+    background-color: whitesmoke;
+}
+
+.artcles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.currency,
+.restaurant,
+.plane,
+.confetti {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.9);
+}
+
+.currency img {
+    clip-path: inset(0 0 9.5%);
+    margin-bottom: 1px;
+}
+
+.currency img,
+.restaurant img,
+.plane img,
+.confetti img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.currency small,
+.restaurant small,
+.plane small,
+.confetti small {
+    padding-inline: 28px;
+    color: #5c5757;
+}
+
+h5 {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-top: 18px;
+    padding-inline: 28px;
+    cursor: pointer;
+}
+
+h5:hover {
+    color: rgb(5, 117, 117);
+}
+
+.currency p,
+.restaurant p,
+.plane p,
+.confetti p {
+    padding-inline: 28px;
+    padding-block: 20px;
+    color: #5c5757;
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+}
+
+footer {
+    background-color: rgb(4, 4, 39);
+    color: white;
+    padding-inline: 7vw;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+.footer-1,
+.footer-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#footer-1-logo {
+    background-color: white;
+}
+
+.footer-icon {
+    cursor: pointer;
+}
+
+.footer-icon img:hover {
+    width: 19%;
+    transition: ease 1s;
+}
+
+.footer-a {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
+    column-gap: 80px;
+}
+
+.footer-a a {
+    text-decoration: none;
+    color: white;
+}
+
+#invite-btn-footer {
+    background: linear-gradient(to right, #33ffc5, #33a1ff);
+    border: none;
+    width: 150px;
+    height: 37px;
+    border-radius: 19px;
+    align-self: flex-end;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-2 small {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 890px) {
+
+    header,
+    .first-section,
+    .second-section,
+    footer {
+        padding-inline: 4vw;
+    }
+
+
+    main {
+        height: 34vh;
+    }
+
+    .main-text {
+        margin-top: 6%;
+        padding-inline: 4vw;
+    }
+
+    .image-1 {
+        top: -2%;
+    }
+
+    .artcles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    .currency p,
+    .restaurant p,
+    .plane p,
+    .confetti p {
+        font-size: 0.95rem;
+    }
+
+    .footer-a {
+        column-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        justify-content: space-between;
+    }
+
+    nav,
+    #invite-btn-nav {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    #hamburger {
+        display: block;
+        width: 20px;
+        cursor: pointer;
+       margin-left: 40%;
+    }
+
+    #close-icn {
+        width: 20px;
+        cursor: pointer;
+        margin-left: 40%;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        position: fixed;
+        top: 10%;
+        right: 0;
+        background-color: #ede8e8;
+        padding: 10px;
+        border-radius: 8px;
+        z-index: 1;
+    }
+
+    .dropdown-menu ul {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .dropdown-menu ul li {
+        list-style-type: none;
+        text-align: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .dropdown-menu ul li:hover {
+        background-color: #555;
+    }
+
+    main {
+        margin-top: 50px;
+        background-color: #fdf9f9;
+        display: flex;
+        flex-direction: column;
+        height: 88vh;
+    }
+
+    .main-image {
+        display: none;
+    }
+
+    .main-image-mobile {
+        display: block;
+    }
+
+    .main-text {
+        margin-top: 95%;
+        text-align: center;
+    }
+
+    .main-text p {
+        font-size: 1.3rem;
+        margin: 0 auto;
+    }
+
+    .image-1 {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+       
+    }
+
+    #bg-intro {
+        width: 100%;
+        transform: translate(0%);
+    }
+
+    .image-2 {
+        position: absolute;
+        width: 100%;
+        top: -10%;
+        right: 0%;
+    }
+
+    #image-mockups {
+        transform: translate(1%);
+    }
+
+    #invite-btn {
+        width: 180px;
+        height: 50px;
+        border-radius: 24px;
+        font-size: 1.4rem;
+        margin-top: 15px;
+    }
+
+    .first-section {
+        text-align: center;
+    }
+
+    .section-txt {
+        width: 400px;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        padding-top: 20px;
+    }
+
+    .Easybank {
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
+        margin-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    .online p,
+    .budgeting p,
+    .Onboarding p,
+    .api p {
+        margin-bottom: 0;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 3.4rem;
+    }
+
+    .artcles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .currency img {
+        clip-path: inset(0 0 0);
+    }
+
+    h5 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .currency small,
+    .restaurant small,
+    .plane small,
+    .confetti small {
+        font-size: 1.2rem;
+    }
+    
+    .currency p,
+    .restaurant p,
+    .plane p,
+    .confetti p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        width: 100%;
+        padding-inline: 1vw;
+        padding-block: 2px;
+    }
+
+    .footer-1,
+    .footer-2 {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-a {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+
+    #invite-btn-footer {
+        font-size: 1.3rem;
+        width: 170px;
+        height: 39px;
+        border-radius: 21px;
+        margin-top: 26px;
+        align-self: center;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .footer-2 small {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    main {
+        margin-top: 50px;
+        background-color: #fdf9f9;
+        display: flex;
+        flex-direction: column;
+        height: 98vh;
+    }
+
+    .main-text p,
+    .section-txt {
+        width: 350px;
+    }
+
+    footer {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    main {
+        height: 130vh;
+    }
+
+    .section-txt {
+        width: 300px;
+    }
+
+    footer {
+        height: 100vh;
+    }
+}
